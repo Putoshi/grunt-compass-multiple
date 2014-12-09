@@ -111,7 +111,7 @@
     };
 
     var buildCommand = function(filePath, options) {
-      var cmd = util.format('compass compile %s', filePath);
+      var cmd = util.format('bundle exec compass compile %s', filePath);
       if (options.config) {
         cmd = util.format('%s --config=%s', cmd, options.config);
       } else {
